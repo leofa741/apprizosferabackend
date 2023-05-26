@@ -1,6 +1,6 @@
 const Categoria = require('../models/categoria');
 const { response } = require('express');
-const { generarJWT } = require('../helpers/jwt');
+
 
 
 const getCategorias = async(req, res) => {  
@@ -50,6 +50,8 @@ const crearCategoria = async(req, res = response) => {
 
 }
 
+
+
 const actualizarCategoria = async(req, res = response) => {
     const uid = req.params.id;
 
@@ -94,6 +96,9 @@ const actualizarCategoria = async(req, res = response) => {
         });
     }   
 }
+
+
+
 
 const borrarCategoria = async(req, res = response) => {
 

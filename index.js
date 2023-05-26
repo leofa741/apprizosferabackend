@@ -11,6 +11,11 @@ const port = process.env.PORT || 3000;
 // CORS
 app.use(cors());
 
+// Directorio publico
+
+app.use(express.static('public'));
+
+
 // Lectura y parseo del body
 
 app.use(express.json());
